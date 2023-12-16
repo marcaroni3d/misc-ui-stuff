@@ -1,8 +1,12 @@
-const navbar = document.querySelector(".navbar")
+const dropdown = document.querySelector("[data-dropdown]")
+const dropdownContent = document.querySelector("[data-dropdown-content]")
 
-export function toggleDisplay() {
-    navbar.style.display = 
-        (navbar.style.display === 'none' || navbar.style.display === '') 
-            ? 'block' : 'none'
+export default function addListeners() {
+    dropdown.addEventListener('mouseover', () => {
+        dropdownContent.style.display = 'block'
+    })
+    dropdown.addEventListener('mouseout', () => {
+        dropdownContent.style.display = 'none'
+    })
 }
 

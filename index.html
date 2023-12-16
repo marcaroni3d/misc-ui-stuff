@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="user-interface">
-        <h3>Toggle an element below.</h3>
-        <div class="ui-wrapper">
-            <button class="ui-dropdown">Dropdown Menu</button>
-        </div>
+    <div class="header">
+        <h1>Misc Ui Stuff</h1>
+        <p>Just a practice page to try out misc components.</p>    
+        <hr>
     </div>
-
+   
+    <h4>This Navbar uses CSS to create a dropdown menu effect:</h4>
     <div class="navbar">
         <ul>
             <li>
@@ -22,9 +22,29 @@
             <li>
                 <a href="#" class="nav-link">News</a>
             </li>
-            <li class="dropdown">
+            <li class="dropdown css-dropdown">
                 <button class="dropdown-button">Dropdown</button>
-                <div class="dropdown-content">
+                <div class="dropdown-content css-dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <h4 class="feature-label">This Navbar uses Javascript to create a dropdown menu effect:</h4>
+    <div class="navbar">
+        <ul>
+            <li>
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">News</a>
+            </li>
+            <li class="dropdown" data-dropdown>
+                <button class="dropdown-button">Dropdown</button>
+                <div class="dropdown-content" data-dropdown-content>
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
                     <a href="#">Link 3</a>

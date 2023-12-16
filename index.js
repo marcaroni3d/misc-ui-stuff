@@ -1,3 +1,3 @@
-import { initUI } from "./modules/UI.js";
+import dropDownMenu from "./modules/dropDownMenu.js"
 
-initUI()
+dropDownMenu()

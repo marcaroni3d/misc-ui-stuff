@@ -2,50 +2,28 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* USER INTERFACE */
-.user-interface {
+.feature-label {
+    margin: 30px 0 30px 0;
+}
+
+/* HEADER */
+.header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
-    padding: 20px 10px;
+    margin-top: -10px;
 }
 
-.ui-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+.header hr {
+    width: 50%;
 }
-
-.ui-wrapper button {
-    background: #e7e7e7;
-    border: none;
-    border-radius: 10px;
-    padding: 5px 10px;
-    text-align: center;
-}
-
-.ui-wrapper button:hover {
-    color: red;
-    cursor: pointer;
-}
-
-.ui-wrapper .active {
-    color: red;
-}
-
-
-
-
 
 /* DROPDOWN MENU */
 .navbar {
     overflow: hidden;
     background-color: #333;
-    display: none;
+    display: block;
 }
 
 .navbar a, .dropdown-button {
@@ -96,6 +74,6 @@ body {
     margin: 0;
 }
 
-.dropdown:hover .dropdown-content {
+.css-dropdown:hover .css-dropdown-content {
     display: block;
 }
