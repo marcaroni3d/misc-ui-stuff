@@ -6,7 +6,6 @@ body {
     margin: 30px 0 30px 0;
 }
 
-
 /* HEADER */
 .header {
     display: flex;
@@ -60,11 +59,16 @@ body {
 /* DROPDOWN MENU */
 .css-navbar, .js-navbar {
     display: none;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .navbar {
     overflow: hidden;
     background-color: #333;
+    width: 50%;
 }
 
 .navbar a, .dropdown-button {
@@ -117,4 +121,41 @@ body {
 
 .css-dropdown:hover .css-dropdown-content {
     display: block;
+}
+
+/* LEFT MENUBAR */
+.left-menubar {
+    background: #333;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.left-menubar h3 {
+    color: rgb(97, 179, 206);
+}
+
+.left-menubar hr {
+    width: 25%;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.left-menubar a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.left-menubar a:hover {
+    color: rgb(97, 179, 206);
+    transition: 100ms ease-in;
+    cursor: pointer;
 }
