@@ -12,45 +12,57 @@
         <p>Just a practice page to try out misc components.</p>    
         <hr>
     </div>
+
+    <div class="user-interface">
+        <h3>Toggle an element below.</h3>
+        <div class="ui-wrapper">
+            <button data-css-navbar-button>CSS Navbar</button>
+            <button data-js-navbar-button>JS Navbar</button>
+        </div>
+    </div>
    
-    <h4>This Navbar uses CSS to create a dropdown menu effect:</h4>
-    <div class="navbar">
-        <ul>
-            <li>
-                <a href="#" class="nav-link">Home</a>
-            </li>
-            <li>
-                <a href="#" class="nav-link">News</a>
-            </li>
-            <li class="dropdown css-dropdown">
-                <button class="dropdown-button">Dropdown</button>
-                <div class="dropdown-content css-dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </li>
-        </ul>
+    <div class="css-navbar">
+        <h4>This Navbar uses CSS to create a dropdown menu effect:</h4>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">News</a>
+                </li>
+                <li class="dropdown css-dropdown">
+                    <button class="dropdown-button">Dropdown</button>
+                    <div class="dropdown-content css-dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <h4 class="feature-label">This Navbar uses Javascript to create a dropdown menu effect:</h4>
-    <div class="navbar">
-        <ul>
-            <li>
-                <a href="#" class="nav-link">Home</a>
-            </li>
-            <li>
-                <a href="#" class="nav-link">News</a>
-            </li>
-            <li class="dropdown" data-dropdown>
-                <button class="dropdown-button">Dropdown</button>
-                <div class="dropdown-content" data-dropdown-content>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </li>
-        </ul>
+    <div class="js-navbar">
+        <h4 class="feature-label">This Navbar uses Javascript to create a dropdown menu effect:</h4>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">News</a>
+                </li>
+                <li class="dropdown" data-dropdown>
+                    <button class="dropdown-button">Dropdown</button>
+                    <div class="dropdown-content" data-dropdown-content>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <script src="./index.js" type="module"></script>

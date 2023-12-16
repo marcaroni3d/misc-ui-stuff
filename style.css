@@ -6,6 +6,7 @@ body {
     margin: 30px 0 30px 0;
 }
 
+
 /* HEADER */
 .header {
     display: flex;
@@ -19,11 +20,51 @@ body {
     width: 50%;
 }
 
+
+/* USER INTERFACE */
+.user-interface {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.ui-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.ui-wrapper button {
+    background: #e7e7e7;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.ui-wrapper button:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.ui-wrapper .active {
+    color: red;
+}
+
+
 /* DROPDOWN MENU */
+.css-navbar, .js-navbar {
+    display: none;
+}
+
 .navbar {
     overflow: hidden;
     background-color: #333;
-    display: block;
 }
 
 .navbar a, .dropdown-button {
