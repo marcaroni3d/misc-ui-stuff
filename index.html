@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="header">
+        <h1>Misc UI Stuff</h1>
+        <p>Just a practice page to try out misc components.</p>    
+        <hr>
+    </div>
+
+    <div class="user-interface">
+        <h3>Toggle an element below.</h3>
+        <div class="ui-wrapper">
+            <button data-css-navbar-button>CSS Navbar</button>
+            <button data-js-navbar-button>JS Navbar</button>
+            <button data-side-menu-button>Side Menu</button>
+            <button data-image-slider>Image Slider</button>
+        </div>
+    </div>
+
     <div class="main">
-        <div class="header">
-            <h1>Misc UI Stuff</h1>
-            <p>Just a practice page to try out misc components.</p>    
-            <hr>
-        </div>
-    
-        <div class="user-interface">
-            <h3>Toggle an element below.</h3>
-            <div class="ui-wrapper">
-                <button data-css-navbar-button>CSS Navbar</button>
-                <button data-js-navbar-button>JS Navbar</button>
-                <button data-side-menu-button>Side Menu</button>
-            </div>
-        </div>
-       
         <div class="css-navbar">
             <h4>This Navbar uses CSS to create a dropdown menu effect:</h4>
             <div class="navbar">
@@ -66,14 +67,45 @@
                 </ul>
             </div>
         </div>
-    </div>
 
-    <div class="left-menubar">
-        <h3>Menu Bar</h3>
-        <hr>
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+        <div class="left-menubar">
+            <h3>Menu Bar</h3>
+            <hr>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+
+        <div class="image-container">
+            <div class="image-slider">
+                <div class="slider-slides">
+                    <div class="slide active-slide">
+                        <img src="./images/cat-1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./images/cat-2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./images/cat-3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./images/cat-4.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./images/cat-5.jpg" alt="">
+                    </div>
+                </div>
+                <div id="nav-button--prev" class="slider-nav-button"></div>
+                <div id="nav-button--next" class="slider-nav-button"></div>
+                <div class="slider-nav">
+                    <div class="slider-navlink active-navlink"></div>
+                    <div class="slider-navlink"></div>
+                    <div class="slider-navlink"></div>
+                    <div class="slider-navlink"></div>
+                    <div class="slider-navlink"></div>
+                  </div>
+            </div>
+        </div>
     </div>
 
     <script src="./index.js" type="module"></script>
